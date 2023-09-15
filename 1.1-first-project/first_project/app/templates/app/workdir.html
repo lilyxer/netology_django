@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список файлов</title>
+</head>
+<body>
+    <h1>Список файлов</h1>
+    <div>
+        <h3>{{ directory.key }}</h3>
+        {{ directory.value}}
+    </div>
+    <div>
+        <h3>{{ file_list.key }}</h3>
+        {% for temp in file_list.value %}
+            {{ temp }}<br>
+        {% endfor %}<br>
+    </div>
+    <div>
+        <a href="{{ page.value }}">{{ page.key }}</a>
+    </div>
+</body>
+</html>
