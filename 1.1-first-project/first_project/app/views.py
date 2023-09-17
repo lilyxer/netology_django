@@ -15,7 +15,7 @@ def home_view(request):
 def time_view(request):
     template_name = 'app/time.html'
     time_now = datetime.utcnow() + timedelta(hours=3)
-    time_now = time_now.strftime("%M:%H:%S")
+    time_now = time_now.strftime("%H:%M:%S")
     context = {'time': {'key': 'Текущее время: ',
                         'value': time_now},
                'page': {'key': 'Возврат на главную страницу', 
