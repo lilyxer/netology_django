@@ -8,7 +8,7 @@ def home_view(request):
     pages = {'Главная страница': reverse('home'),
              'Показать текущее время': reverse('time'),
              'Показать содержимое рабочей директории': reverse('workdir'),}
-    context = {'pages': pages}
+    context = {'pages': pages, 'title': 'Главная страница'}
     return render(request, template_name, context)
 
 
@@ -19,7 +19,9 @@ def time_view(request):
     context = {'time': {'key': 'Текущее время: ',
                         'value': time_now},
                'page': {'key': 'Возврат на главную страницу', 
-                        'value': reverse('home')},}
+                        'value': reverse('home')},
+               'title': 'Текущее время',
+               }
     return render(request, template_name, context)
 
 
