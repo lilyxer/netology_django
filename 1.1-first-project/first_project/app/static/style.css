@@ -1,0 +1,16 @@
+body { /*all about default text*/
+    font-family: OpenSans, Helvetica, sans-serif;
+    font-weight: normal;
+    background: #b3b3b3;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}

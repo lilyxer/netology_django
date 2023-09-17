@@ -3,6 +3,7 @@ from django.shortcuts import render, reverse
 from datetime import datetime, timedelta
 from os import listdir, getcwd
 
+
 def home_view(request):
     template_name = 'app/home.html'
     pages = {'Главная страница': reverse('home'),
@@ -32,6 +33,8 @@ def workdir_view(request):
                'file_list': {'key': 'Список файлов: ', 
                              'value': listdir()}, 
                'page': {'key': 'Возврат на главную страницу', 
-                        'value': reverse('home')},}
+                        'value': reverse('home')},
+               'title': 'Содержимое рабочей директории',
+               }
     return render(request, template_name, context)
 
