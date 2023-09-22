@@ -1,0 +1,18 @@
+{% extends 'calculator/base.html' %}
+
+{% block maincontext %}
+    <ul>
+    {%for key, value in recipe.items%}
+        <li style="list-style-type: none;">{{ key }}: {{ value }}</li>
+    {% empty %}
+        <p>Рецепт утерян</p>
+    {% endfor %}
+    </ul>
+
+    {% for text, link in page.items %}
+        <p>
+            <a style="text-decoration: none" href="{{  link  }}"> {{ text }}</a>
+        </p>
+    {% endfor %}
+
+{% endblock maincontext %}
