@@ -16,5 +16,59 @@
       "author": "Джордж Оруэл",
       "pub_date": "2016-12-06"
     }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "name": "Python, Django и PyCharm для начинающих",
+      "author": "Анатолий Постолит",
+      "pub_date": "2021-04-30"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "name": "Грокаем алгоритмы",
+      "author": "Адитья Бхаргава",
+      "pub_date": "2018-10-10"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "name": "Чистая архитектура",
+      "author": "Роберт Мартин",
+      "pub_date": "2018-01-25"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 6,
+    "fields": {
+      "name": "1984",
+      "author": "Джордж Оруэл",
+      "pub_date": "2016-12-08"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 7,
+    "fields": {
+      "name": "Сказка",
+      "author": "Стивен Кинг",
+      "pub_date": "2023-03-25"
+    }
+  }, 
+  {
+    "model": "books.book",
+    "pk": 8,
+    "fields": {
+      "name": "Избранные сочинения",
+      "author": "Рей Брежбери",
+      "pub_date": "2017-08-24"
+    }
   }
 ]

@@ -2,8 +2,6 @@ from django.shortcuts import render, redirect
 from phones.models import Phone
 
 
-# all_phones = Phone.objects.all()
-
 def index(request):
     return redirect('catalog')
 

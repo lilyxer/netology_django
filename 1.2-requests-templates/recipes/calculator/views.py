@@ -50,9 +50,9 @@ def omlet_view(request):
     return render(request, template_name, context)
 
 def pasta_view(request):
-    template_name, context = get_context(request=request, dishes='паста')
+    template_name, context = get_context(request=request, dishes='пасты')
     return render(request, template_name, context)
 
 def buter_view(request):
-    template_name, context = get_context(request=request, dishes='сендвич')
+    template_name, context = get_context(request=request, dishes='сендвича')
     return render(request, template_name, context)
