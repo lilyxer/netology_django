@@ -57,6 +57,16 @@ Content-Type: application/json
       "product": 3,
       "quantity": 100,
       "price": 180
+    },
+    {
+      "product": 1,
+      "quantity": 1000,
+      "price": 10
+    },
+    {
+      "product": 1,
+      "quantity": 10,
+      "price": 1
     }
   ]
 }
